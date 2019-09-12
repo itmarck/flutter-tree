@@ -3,6 +3,7 @@
 	"displayName": "Flutter Tree",
 	"description": "Extension for Flutter to build basic widget tree.",
 	"version": "1.0.0",
+	"icon": "assets/icon.png",
 	"publisher": "marcelovelasquez",
 	"engines": {
 		"vscode": "^1.37.0"
