@@ -4,6 +4,8 @@
 
 Extension for Flutter to build basic widget tree with nice syntax.
 
+![Example](assets/example.gif)
+
 ## Syntax
 
 ### Base syntax
