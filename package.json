@@ -1,59 +1,59 @@
 {
-	"name": "flutter-tree",
-	"displayName": "Flutter Tree",
-	"description": "Extension for Flutter to build basic widget tree.",
-	"version": "1.0.0",
-	"icon": "assets/icon.png",
-	"publisher": "marcelovelasquez",
-	"engines": {
-		"vscode": "^1.37.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"keywords": [
-		"flutter",
-		"widgets",
-		"tree",
-		"dart"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/MarceloVelasquez/flutter-tree.git"
-	},
-	"activationEvents": [
-		"onCommand:extension.fromAbbr",
-		"onCommand:extension.fromSelection",
-		"onLanguage:dart"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.fromAbbr",
-				"title": "Flutter Tree: From abbreviation"
-			},
-			{
-				"command": "extension.fromSelection",
-				"title": "Flutter Tree: From selection"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.37.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.2"
-	}
+  "name": "flutter-tree",
+  "displayName": "Flutter Tree",
+  "description": "Extension for Flutter to build basic widget tree.",
+  "version": "1.1.0",
+  "icon": "assets/icon.png",
+  "publisher": "marcelovelasquez",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "flutter",
+    "widgets",
+    "tree",
+    "dart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarceloVelasquez/flutter-tree.git"
+  },
+  "activationEvents": [
+    "onLanguage:dart"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.fromAbbr",
+        "title": "Flutter Tree: From abbreviation"
+      },
+      {
+        "command": "extension.fromSelection",
+        "title": "Flutter Tree: From selection"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.91.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
 }
